@@ -78,7 +78,7 @@ That's it, easy-peasy.
 The keepExt flag allows you to serve templates but keep their extensions (i.e. /main.html);
 
 
-You may also include an option called `context` that will be passed to the rendering engine. Context can either be an object that will be passed as variables or a function that takes the `req` from express and a callback (whose result will then be passed to the template).
+You may also include an option called `context` that will be passed to the rendering engine. Context can either be an object that will be passed as variables or a function that takes the `req` from express and a callback (whose result will then be passed to the template). If you specify `passReq: true` the express request object will also be passed (useful to access req.params, etc from your template).
 
 ## Little sneaky static sites within your app (great for docs)
 
